@@ -1,7 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapp.LoginController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="26.0" prefHeight="375.0" prefWidth="902.0" style="-fx-background-color: #fff; -fx-border-radius: 0.5em;">
+         <children>
+            <Button fx:id="btn_signin" layoutX="6.0" layoutY="156.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="126.0" stylesheets="@../CSS/SignInBtnSingUpBtn.css" text="Sign in" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font></Button>
+            <Button fx:id="btn_signup" layoutX="6.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="126.0" stylesheets="@../CSS/SignInBtnSingUpBtn.css" text="Sign up" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font></Button>
+            <AnchorPane fx:id="pn_signup" layoutX="592.0" layoutY="1.0" prefHeight="424.0" prefWidth="310.0" style="-fx-background-color: #fff;">
+               <children>
+                  <TextField layoutX="18.0" layoutY="118.0" prefHeight="50.0" prefWidth="275.0" promptText="firstname">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="18.0" layoutY="187.0" prefHeight="50.0" prefWidth="275.0" promptText="lastname">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="18.0" layoutY="258.0" prefHeight="50.0" prefWidth="275.0" promptText="email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button contentDisplay="GRAPHIC_ONLY" layoutX="119.0" layoutY="327.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="30.0" style="-fx-background-color: #FFFFFF;" text="Button" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="64.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/signin.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="119.0" layoutY="55.0" text="Sign Up" textFill="#1c37d4">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pn_signin" layoutX="590.0" prefHeight="424.0" prefWidth="310.0" style="-fx-background-color: #fff; -fx-background-radius: 5em;">
+               <children>
+                  <TextField layoutX="18.0" layoutY="142.0" prefHeight="50.0" prefWidth="275.0" promptText="username">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField layoutX="18.0" layoutY="232.0" prefHeight="50.0" prefWidth="275.0" promptText="password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Button contentDisplay="GRAPHIC_ONLY" defaultButton="true" layoutX="117.0" layoutY="300.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="30.0" style="-fx-background-color: #FFFFFF;" text="Button" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="64.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/signin.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="122.0" layoutY="62.0" text="Sign In" textFill="#1c37d4">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="135.0" layoutY="-10.0" prefHeight="516.0" prefWidth="455.0" style="-fx-background-color: #1A33D5;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="140.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/welcome.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="60.0" layoutY="295.0" text="Welcome to Even Logs System" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="164.0" layoutY="345.0" text="Must have system" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
