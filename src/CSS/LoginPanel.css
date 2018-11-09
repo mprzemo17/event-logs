@@ -1,0 +1,114 @@
+
+/*--------------------------------------------------------------------
+         TO JEST DOKUMENT ODPOWIEDZIALNY ZA DESIGN GUI SYSTEMU (CSS)
+ ---------------------------------------------------------------------*/
+
+/* Button po lewej Sign In */
+#btn_signin     /*fxid to jest */
+{
+    -fx-background-color:
+            #fafdfe,  /*border */
+            linear-gradient(#fafdfe, #e8f5fc),
+            linear-gradient(#0575E6 0%, #021B79 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+
+}
+
+
+/* Button po lewej Sign Up */
+#btn_signup     /*fxid to jest */
+ {
+    -fx-background-color:
+            #fafdfe,
+            linear-gradient(#fafdfe, #e8f5fc),
+            linear-gradient(#0575E6 0%, #021B79 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+
+}
+
+
+/* AnchorPane prostokąt w panelu logowanie niebieski */
+#center_panel     /*fxid to jest */
+{
+    -fx-background-color: #3c7fb1,
+    linear-gradient(#8e2de2, #4a00e0),  /* obramowanie prostokąta */
+    linear-gradient(#0575E6 0%, #021B79 100%);  /* kolor prostokąta gradient niebieski (#0575E6 0%, #021B79 100% */
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3, 2, 1;
+
+}
+
+/* Button po prawej Sign In */
+#btn2_signin     /*fxid to jest */
+{
+    -fx-background-color:
+            #fafdfe,
+            linear-gradient(#fafdfe, #e8f5fc),
+            linear-gradient(#0575E6 0%, #021B79 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+
+}
+
+/* Button po prawej Sign Up */
+#btn2_signup     /*fxid to jest */
+{
+    -fx-background-color:
+            #fafdfe,
+            linear-gradient(#fafdfe, #e8f5fc),
+            linear-gradient(#0575E6 0%, #021B79 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+
+}
+
+    /* Pane szerszy */
+#bg1_pane     /*fxid to jest */
+{
+    -fx-background-color:
+            #D3CCE3,
+            linear-gradient(#D3CCE3, #E9E4F0),
+            linear-gradient(#D3CCE3 0%, #E9E4F0 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+
+}
+
+
+/* Pane węższy */
+#bg2_pane     /*fxid to jest */
+{
+    -fx-background-color:
+            #b6b0c5,
+            linear-gradient(#D3CCE3, #E9E4F0),
+            linear-gradient(#D3CCE3 0%, #E9E4F0 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+
+}
+
+/* Label  z napisem SignIn tło fradient niebieski */
+#Label_SignIn     /*fxid to jest */
+{
+    -fx-background-color:
+            linear-gradient(#0575E6 0%, #021B79 100%);
+
+
+}
+
+/* Label  z napisem SignUp tło fradient niebieski*/
+#Label_SignUp     /*fxid to jest */
+{
+    -fx-background-color:
+            linear-gradient(#0575E6 0%, #021B79 100%);
+
+
+}

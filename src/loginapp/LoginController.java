@@ -33,6 +33,11 @@ public class LoginController implements Initializable {
     }
 
 
+     @FXML
+        public Button closeButton;
+
+
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 

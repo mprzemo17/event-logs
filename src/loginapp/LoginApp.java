@@ -1,14 +1,18 @@
 package loginapp;
 
 import javafx.application.Application;
+
 import javafx.event.EventHandler;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+
 import javafx.scene.input.MouseEvent;
-import javafx.scene.paint.Color;
+
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
+
+
 
 public class LoginApp extends Application {
 
@@ -17,7 +21,10 @@ public class LoginApp extends Application {
 
     public void start (Stage stage) throws Exception {
         Parent root = (Parent) FXMLLoader.load(getClass().getResource("login.fxml"));
-        stage.initStyle(StageStyle.TRANSPARENT);  //odpowiada za to aby nie było w gui ramki z zamknięciem i minimalizacją (obramowanie)
+       // stage.initStyle(StageStyle.TRANSPARENT);  //odpowiada za to aby nie było w gui ramki z zamknięciem i minimalizacją (obramowanie)
+
+
+
 
         //kod odpowiadający za przejścia ramek
 
@@ -37,17 +44,24 @@ public class LoginApp extends Application {
         });
 
 
+
+
         Scene scene = new Scene(root);
 
-        //set transparent
+       // set transparent
         //scene.setFill(Color.TRANSPARENT);
 
         stage.setScene(scene);
         stage.setTitle("Event Logs");
         stage.show();
     }
+
+
+
+
     public static void main(String[] args) {
         launch(args);
     }
+
 
 }
