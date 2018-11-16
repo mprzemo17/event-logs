@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class dbConnection {
 
-    private static final String USERNAME = "dbuser";
-    private static final String PASSWORD = "dbpassword";
-    private static final String CONNECTION = "jdbc:mysql://localhost/eventlogsdb";
+    private static final String USERNAME = "user";
+    private static final String PASSWORD = "password";
+   // private static final String CONNECTION = "jdbc:mysql://localhost/eventlogsdb";
     private static final String SQLITECONNECTION = "jdbc:sqlite:eventlogsdb.sqlite";
 
 
