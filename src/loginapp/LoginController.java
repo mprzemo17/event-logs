@@ -3,9 +3,11 @@ package loginapp;
 import admin.AdminController;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
@@ -56,16 +58,29 @@ public class LoginController implements Initializable {
     private Label loginStatus;
 
 
+
+    //przycisk Exit odpowiedzialny za zamknięcie okna logowania aplikacji! DZIAŁA!!!!!
+    @FXML
+    private void closeAction(ActionEvent exitButton){
+        System.exit(0);
+    }
+
+// KONIEC KODU OPDOWIEDZIALNEGO ZA ZAMKNIĘCIE APLIKACJI
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         if (this.loginModel.isDatabaseConnected()) {
-            this.dbstatus.setText("Connected");
+            this.dbstatus.setText("Database is: Connected");
         } else {
             this.dbstatus.setText("Not Connected To Database");
         }
         this.combobox.setItems(FXCollections.observableArrayList(option.values()));
 
     }
+
+
+
+
 
     //login function
 
@@ -85,7 +100,7 @@ public class LoginController implements Initializable {
                         break;
                 }
             } else {
-                this.loginStatus.setText("Wrong Creditentials");
+                this.loginStatus.setText("Wrong Username or Password");
 
             }
 

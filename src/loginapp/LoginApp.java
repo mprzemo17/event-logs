@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 
 import javafx.stage.Stage;
-
+import javafx.stage.StageStyle;
 
 
 public class LoginApp extends Application {
@@ -21,7 +21,7 @@ public class LoginApp extends Application {
 
     public void start (Stage stage) throws Exception {
         Parent root = (Parent) FXMLLoader.load(getClass().getResource("login.fxml"));
-       // stage.initStyle(StageStyle.TRANSPARENT);  //odpowiada za to aby nie było w gui ramki z zamknięciem i minimalizacją (obramowanie)
+       stage.initStyle(StageStyle.TRANSPARENT);  //odpowiada za to aby nie było w gui ramki z zamknięciem i minimalizacją (obramowanie)
 
 
 

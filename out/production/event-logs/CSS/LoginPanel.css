@@ -6,10 +6,9 @@
 /* Button po lewej Sign In */
 #btn_signin     /*fxid to jest */
 {
-    -fx-background-color:
-            #fafdfe,  /*border */
-            linear-gradient(#fafdfe, #e8f5fc),
-            linear-gradient(#0575E6 0%, #021B79 100%);
+    -fx-background-color: #000000,
+    linear-gradient(#596164 0%,#868f96 100%),  /* obramowanie prostokąta */
+    linear-gradient(to bottom, #767676, #5b5b5b, #424242, #2a2a2a, #141414);
     -fx-background-insets: 0,1,2;
     -fx-background-radius: 3,2,1;
     -fx-padding: 3 30 3 30;
@@ -20,10 +19,9 @@
 /* Button po lewej Sign Up */
 #btn_signup     /*fxid to jest */
  {
-    -fx-background-color:
-            #fafdfe,
-            linear-gradient(#fafdfe, #e8f5fc),
-            linear-gradient(#0575E6 0%, #021B79 100%);
+    -fx-background-color: #000000,
+    linear-gradient(#596164 0%,#868f96 100%),  /* obramowanie prostokąta */
+            linear-gradient(to bottom, #767676, #5b5b5b, #424242, #2a2a2a, #141414);
     -fx-background-insets: 0,1,2;
     -fx-background-radius: 3,2,1;
     -fx-padding: 3 30 3 30;
@@ -34,9 +32,12 @@
 /* AnchorPane prostokąt w panelu logowanie niebieski */
 #center_panel     /*fxid to jest */
 {
-    -fx-background-color: #3c7fb1,
-    linear-gradient(#8e2de2, #4a00e0),  /* obramowanie prostokąta */
-    linear-gradient(#0575E6 0%, #021B79 100%);  /* kolor prostokąta gradient niebieski (#0575E6 0%, #021B79 100% */
+
+
+    -fx-background-color: #000000,
+    linear-gradient(#596164 0%,#868f96 100%),  /* obramowanie prostokąta */
+    linear-gradient(to bottom, #929292, #6f6f6f, #4f4f4f, #303030, #141414);
+    /*linear-gradient(#434343 0%, #000000 100%);  !* kolor prostokąta gradient niebieski (#0575E6 0%, #021B79 100% *!*/
     -fx-background-insets: 0, 1, 2;
     -fx-background-radius: 3, 2, 1;
 
@@ -45,41 +46,27 @@
 /* Button po prawej Sign In */
 #btn2_signin     /*fxid to jest */
 {
-    -fx-background-color:
-            #fafdfe,
-            linear-gradient(#fafdfe, #e8f5fc),
-            linear-gradient(#0575E6 0%, #021B79 100%);
+    -fx-background-color: #000000,
+    linear-gradient(#596164 0%,#868f96 100%),  /* obramowanie prostokąta */
+    linear-gradient(to bottom, #767676, #5b5b5b, #424242, #2a2a2a, #141414);
     -fx-background-insets: 0,1,2;
     -fx-background-radius: 3,2,1;
-    -fx-padding: 3 30 3 30;
 
 }
 
 /* Button po prawej Sign Up */
 #btn2_signup     /*fxid to jest */
 {
-    -fx-background-color:
-            #fafdfe,
-            linear-gradient(#fafdfe, #e8f5fc),
-            linear-gradient(#0575E6 0%, #021B79 100%);
+    -fx-background-color: #000000,
+    linear-gradient(#596164 0%,#868f96 100%),  /* obramowanie prostokąta */
+    linear-gradient(to bottom, #767676, #5b5b5b, #424242, #2a2a2a, #141414);
     -fx-background-insets: 0,1,2;
     -fx-background-radius: 3,2,1;
-    -fx-padding: 3 30 3 30;
 
 }
 
     /* Pane szerszy */
-#bg1_pane     /*fxid to jest */
-{
-    -fx-background-color:
-            #D3CCE3,
-            linear-gradient(#D3CCE3, #E9E4F0),
-            linear-gradient(#D3CCE3 0%, #E9E4F0 100%);
-    -fx-background-insets: 0,1,2;
-    -fx-background-radius: 3,2,1;
-    -fx-padding: 3 30 3 30;
 
-}
 
 
 /* Pane węższy */
@@ -88,7 +75,7 @@
     -fx-background-color:
             #b6b0c5,
             linear-gradient(#D3CCE3, #E9E4F0),
-            linear-gradient(#D3CCE3 0%, #E9E4F0 100%);
+    linear-gradient(to top, #595959, #747474, #909090, #adadad, #cbcbcb);
     -fx-background-insets: 0,1,2;
     -fx-background-radius: 3,2,1;
     -fx-padding: 3 30 3 30;
@@ -99,16 +86,65 @@
 #Label_SignIn     /*fxid to jest */
 {
     -fx-background-color:
-            linear-gradient(#0575E6 0%, #021B79 100%);
+            linear-gradient(to bottom, #929292, #6f6f6f, #4f4f4f, #303030, #141414);
 
 
 }
 
-/* Label  z napisem SignUp tło fradient niebieski*/
+/* Label  z napisem SignUp tło gradient niebieski*/
 #Label_SignUp     /*fxid to jest */
 {
     -fx-background-color:
-            linear-gradient(#0575E6 0%, #021B79 100%);
+            linear-gradient(to bottom, #929292, #6f6f6f, #4f4f4f, #303030, #141414);
 
 
 }
+
+
+
+/* Button po prawej Exit */
+#exitButton     /*fxid to jest */
+{
+    -fx-background-color: #b6b0c5,
+    linear-gradient(#D3CCE3, #E9E4F0),
+    linear-gradient(to top, #595959, #747474, #909090, #adadad, #cbcbcb);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3, 2, 1;
+
+}
+
+
+/* Button po lewej Sign In */
+#pn_signin     /*fxid to jest */
+{
+    -fx-background-color:
+            #fafdfe,  /*border */
+            linear-gradient(#596164 0%,#868f96 100%),  /* obramowanie prostokąta */
+            linear-gradient(to bottom, #767676, #5b5b5b, #424242, #2a2a2a, #141414);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 10,10,10;
+
+}
+
+
+/* Button po lewej Sign In */
+#pn_signup  /*fxid to jest */
+{
+    -fx-background-color:
+            #fafdfe,  /*border */
+            linear-gradient(#596164 0%,#868f96 100%),  /* obramowanie prostokąta */
+            linear-gradient(to bottom, #767676, #5b5b5b, #424242, #2a2a2a, #141414);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 10,10,10;
+
+}
+
+
+
+
+
+
+
+
+
+

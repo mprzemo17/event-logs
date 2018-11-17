@@ -3,7 +3,7 @@ fx:controller="admin.adminFXML
 
 
 w pliku adminFXML.fxml usunąłem z lini 10 końcówkę nazywającą AnchorPane    w fxml : fx:controller="admin.adminFXML
-
+plik userFXML.fxml   usunięta linia 11:   fx:controller="users.UsersFXML"
 
 
 cały kod:
