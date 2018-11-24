@@ -1,5 +1,6 @@
 package loginapp;
 
+import com.sun.javafx.css.Stylesheet;
 import javafx.application.Application;
 
 import javafx.event.EventHandler;
@@ -20,6 +21,7 @@ public class LoginApp extends Application {
     private double yOffset = 0;
 
     public void start (Stage stage) throws Exception {
+
         Parent root = (Parent) FXMLLoader.load(getClass().getResource("login.fxml"));
        stage.initStyle(StageStyle.TRANSPARENT);  //odpowiada za to aby nie było w gui ramki z zamknięciem i minimalizacją (obramowanie)
 

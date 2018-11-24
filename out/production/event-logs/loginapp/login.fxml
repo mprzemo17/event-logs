@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.*?>
-<?import com.jfoenix.controls.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import java.lang.*?>
@@ -18,19 +17,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="bg2_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="1028.0" stylesheets="@../CSS/LoginPanel.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapp.LoginController">
+<AnchorPane fx:id="bg2_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="1028.0" stylesheets="@LoginPanel.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapp.LoginController">
    <children>
-      <AnchorPane fx:id="bg1_pane" layoutX="-1.0" layoutY="41.0" prefHeight="430.0" prefWidth="1034.0" style="-fx-border-radius: 0.5em;" stylesheets="@../CSS/LoginPanel.css">
+      <AnchorPane fx:id="bg1_pane" layoutX="-1.0" layoutY="41.0" prefHeight="430.0" prefWidth="1034.0" style="-fx-border-radius: 0.5em;" stylesheets="@LoginPanel.css">
          <children>
-            <Button fx:id="btn_signin" layoutX="16.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="126.0" stylesheets="@../CSS/LoginPanel.css" text="Sign in" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="btn_signin" layoutX="16.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="126.0" stylesheets="@LoginPanel.css" text="Sign in" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Berlin Sans FB" size="21.0" />
                </font></Button>
-            <Button fx:id="btn_signup" layoutX="16.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="126.0" stylesheets="@../CSS/LoginPanel.css" text="Sign up" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="btn_signup" layoutX="16.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="126.0" stylesheets="@LoginPanel.css" text="Sign up" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Berlin Sans FB" size="21.0" />
                </font></Button>
-            <AnchorPane fx:id="pn_signin" layoutX="642.0" prefHeight="424.0" prefWidth="326.0" stylesheets="@../CSS/LoginPanel.css">
+            <AnchorPane fx:id="pn_signin" layoutX="642.0" prefHeight="424.0" prefWidth="326.0" stylesheets="@LoginPanel.css">
                <children>
                   <TextField fx:id="username" layoutX="26.0" layoutY="139.0" prefHeight="50.0" prefWidth="275.0" promptText="username">
                      <font>
@@ -42,12 +41,12 @@
                         <Font size="14.0" />
                      </font>
                   </PasswordField>
-                  <Label fx:id="Label_SignIn" alignment="CENTER" contentDisplay="CENTER" layoutY="54.0" prefHeight="31.0" prefWidth="326.0" stylesheets="@../CSS/LoginPanel.css" text="Sign In" textAlignment="CENTER" textFill="WHITE">
+                  <Label fx:id="Label_SignIn" alignment="CENTER" contentDisplay="CENTER" layoutY="54.0" prefHeight="31.0" prefWidth="326.0" stylesheets="@LoginPanel.css" text="Sign In" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Berlin Sans FB" size="25.0" />
                      </font>
                   </Label>
-                  <Button fx:id="btn2_signin" layoutX="110.0" layoutY="335.0" mnemonicParsing="false" onAction="#Login" prefHeight="45.0" prefWidth="126.0" stylesheets="@../CSS/LoginPanel.css" text="Next" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="btn2_signin" layoutX="110.0" layoutY="335.0" mnemonicParsing="false" onAction="#Login" prefHeight="45.0" prefWidth="126.0" stylesheets="@LoginPanel.css" text="Next" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Berlin Sans FB" size="21.0" />
                      </font>
@@ -64,7 +63,7 @@
 
                </children>
             </AnchorPane>
-            <AnchorPane fx:id="pn_signup" layoutX="644.0" prefHeight="424.0" prefWidth="326.0" stylesheets="@../CSS/LoginPanel.css">
+            <AnchorPane fx:id="pn_signup" layoutX="644.0" prefHeight="424.0" prefWidth="326.0" stylesheets="@LoginPanel.css">
                <children>
                   <TextField layoutX="26.0" layoutY="118.0" prefHeight="50.0" prefWidth="275.0" promptText="firstname">
                      <font>
@@ -86,7 +85,7 @@
                         <Font name="Berlin Sans FB" size="25.0" />
                      </font>
                   </Label>
-                  <Button fx:id="btn2_signup" layoutX="110.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="126.0" stylesheets="@../CSS/LoginPanel.css" text="Next" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="btn2_signup" layoutX="110.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="126.0" stylesheets="@LoginPanel.css" text="Next" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Berlin Sans FB" size="21.0" />
                      </font>
@@ -95,7 +94,7 @@
             </AnchorPane>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="center_panel" layoutX="159.0" layoutY="-8.0" prefHeight="516.0" prefWidth="421.0" stylesheets="@../CSS/LoginPanel.css">
+      <AnchorPane fx:id="center_panel" layoutX="159.0" layoutY="-8.0" prefHeight="516.0" prefWidth="421.0" stylesheets="@LoginPanel.css">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="116.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -113,7 +112,7 @@
                </font>
             </Label>
          </children></AnchorPane>
-      <Button fx:id="exitButton" layoutX="992.0" mnemonicParsing="false" onAction="#closeAction" prefHeight="39.0" prefWidth="23.0" stylesheets="@../CSS/LoginPanel.css" text="X" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="exitButton" layoutX="992.0" mnemonicParsing="false" onAction="#closeAction" prefHeight="39.0" prefWidth="23.0" stylesheets="@LoginPanel.css" text="X" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>

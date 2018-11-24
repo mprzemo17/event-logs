@@ -3,7 +3,7 @@ fx:controller="admin.adminFXML
 
 
 w pliku adminFXML.fxml usunąłem z lini 10 końcówkę nazywającą AnchorPane    w fxml : fx:controller="admin.adminFXML
-plik userFXML.fxml   usunięta linia 11:   fx:controller="users.UsersFXML"
+
 
 
 cały kod:
@@ -22,3 +22,17 @@ cały kod:
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.adminFXML" >
 
 </AnchorPane>
+
+
+
+
+git add . 
+git commit -m ""
+git push origin changes
+
+
+
+resouce do pliku css w pliku .fxml nie może zaczynać się od @ tylko od:
+
+
+<AnchorPane fx:id="bg3_pane" prefHeight="700.0" prefWidth="1200.0" stylesheets="/LoginPanel.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminController">
