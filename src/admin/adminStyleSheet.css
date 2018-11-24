@@ -1,12 +1,24 @@
 /* AnchorPane prostokąt w panelu logowanie niebieski */
-#bg3_pane     /*fxid to jest */
+#bg_admin     /*fxid to jest */
 {
 
-
-    -fx-background-color: #000000,
+   -fx-background-color: #000000,
     linear-gradient(#596164 0%,#868f96 100%),  /* obramowanie prostokąta */
     linear-gradient(to bottom, #929292, #6f6f6f, #4f4f4f, #303030, #141414);
     /*linear-gradient(#434343 0%, #000000 100%);  !* kolor prostokąta gradient niebieski (#0575E6 0%, #021B79 100% *!*/
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3, 2, 1;
+
+}
+
+
+
+/* Button po prawej Exit */
+#exitButton     /*fxid to jest */
+{
+    -fx-background-color: #b6b0c5,
+    linear-gradient(#D3CCE3, #E9E4F0),
+    linear-gradient(to top, #595959, #747474, #909090, #adadad, #cbcbcb);
     -fx-background-insets: 0, 1, 2;
     -fx-background-radius: 3, 2, 1;
 
