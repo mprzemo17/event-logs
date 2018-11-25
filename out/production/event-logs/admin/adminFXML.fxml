@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,12 +8,112 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="bg_admin" prefHeight="700.0" prefWidth="1200.0" stylesheets="/admin/adminStyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminController">
+<AnchorPane fx:id="bg_admin" prefHeight="644.0" prefWidth="1206.0" stylesheets="/admin/adminStyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminController">
    <children>
-      <Button fx:id="exitButton" layoutX="1158.0" layoutY="5.0" mnemonicParsing="false" onAction="#closeAction" prefHeight="39.0" prefWidth="23.0" stylesheets="@adminStyleSheet.css" text="X" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="exitButton" layoutX="1167.0" layoutY="2.0" mnemonicParsing="false" onAction="#closeAction" prefHeight="39.0" prefWidth="23.0" stylesheets="@adminStyleSheet.css" text="X" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
+      <TabPane layoutX="6.0" layoutY="43.0" prefHeight="660.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="loginaccess">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutY="176.0" prefHeight="498.0" prefWidth="1200.0">
+                           <children>
+                              <TableView fx:id="usertable" prefHeight="493.0" prefWidth="800.0">
+                                <columns>
+                                  <TableColumn fx:id="idcolumn" prefWidth="75.0" text="ID" />
+                                  <TableColumn fx:id="usernamecolumn" prefWidth="248.0" text="Username" />
+                                    <TableColumn fx:id="passwordcolumn" minWidth="0.0" prefWidth="260.0" text="Password" />
+                                    <TableColumn fx:id="profilecolumn" prefWidth="295.0" text="Profile" />
+                                </columns>
+                                 <HBox.margin>
+                                    <Insets left="200.0" right="200.0" />
+                                 </HBox.margin>
+                              </TableView>
+                           </children>
+                        </HBox>
+                        <VBox layoutX="-2.0" layoutY="1.0" prefHeight="175.0" prefWidth="1200.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="1200.0" text="User Management">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane prefHeight="148.0" prefWidth="1200.0">
+                                 <children>
+                                    <Label layoutX="347.0" layoutY="47.0" text="Username: " textAlignment="CENTER">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <Label layoutX="347.0" layoutY="77.0" text="Password: " textAlignment="CENTER">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <Label layoutX="347.0" layoutY="106.0" text="Profile: " textAlignment="CENTER">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <TextField fx:id="username" layoutX="451.0" layoutY="45.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </TextField>
+                                    <TextField fx:id="password" layoutX="451.0" layoutY="75.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </TextField>
+                                    <TextField fx:id="profile" layoutX="451.0" layoutY="104.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </TextField>
+                                    <Button layoutX="706.0" layoutY="28.0" mnemonicParsing="false" onAction="#addUser" prefHeight="25.0" prefWidth="150.0" text="Add User" />
+                                    <Button layoutX="706.0" layoutY="58.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="25.0" prefWidth="150.0" text="Clear Form" />
+                                    <Button layoutX="706.0" layoutY="87.0" mnemonicParsing="false" onAction="#loadUserData" prefHeight="25.0" prefWidth="150.0" text="Load Data" />
+                                    <Label layoutX="347.0" layoutY="19.0" text="ID :" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <TextField fx:id="id" layoutX="451.0" layoutY="17.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Other">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
    </children>
 </AnchorPane>
