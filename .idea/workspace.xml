@@ -4,6 +4,9 @@
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eventlogsdb.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/eventlogsdb.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/event-logs/admin/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/event-logs/admin/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/event-logs/admin/UserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/event-logs/admin/UserData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/event-logs/admin/adminFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/event-logs/admin/adminFXML.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/admin/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/UserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/admin/adminFXML.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/adminFXML.fxml" afterDir="false" />
@@ -147,16 +150,10 @@
       <file leaf-file-name="UserData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/admin/UserData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            <state relative-caret-position="612">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#784#785#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
                 <element signature="e#850#851#0" expanded="true" />
                 <element signature="e#887#888#0" expanded="true" />
                 <element signature="e#935#936#0" expanded="true" />
@@ -183,13 +180,24 @@
       <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/admin/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="74" column="60" lean-forward="true" selection-start-line="74" selection-start-column="60" selection-end-line="74" selection-end-column="60" />
+            <state relative-caret-position="306">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
                 <element signature="e#1186#1187#0" expanded="true" />
                 <element signature="e#1225#1226#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginaccess.sql" pinned="false" current-in-tab="false">
+        <entry file="das://4122c290-5bc6-4e47-9d7c-6dd22b97ce6e/schema/main/table/loginaccess.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -224,6 +232,7 @@
       <find>admin</find>
       <find>data</find>
       <find>stateme</find>
+      <find>delete</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -261,10 +270,11 @@
         <option value="$PROJECT_DIR$/src/admin/adminStyleSheet.css" />
         <option value="$PROJECT_DIR$/src/users/usersFXML.css" />
         <option value="$PROJECT_DIR$/src/users/UsersController.java" />
-        <option value="$PROJECT_DIR$/src/admin/adminFXML.fxml" />
         <option value="$PROJECT_DIR$/src/users/usersFXML.fxml" />
+        <option value="$PROJECT_DIR$/src/admin/adminFXML.fxml" />
         <option value="$PROJECT_DIR$/src/admin/UserData.java" />
         <option value="$PROJECT_DIR$/src/admin/AdminController.java" />
+        <option value="4122c290-5bc6-4e47-9d7c-6dd22b97ce6e/schema/main/table/loginaccess.sql" />
       </list>
     </option>
   </component>
@@ -284,9 +294,9 @@
     <packageJsonPaths />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-155" />
+    <option name="y" value="6" />
     <option name="width" value="1382" />
     <option name="height" value="784" />
   </component>
@@ -501,20 +511,19 @@
       <workItem from="1542385399560" duration="3735000" />
       <workItem from="1542444692029" duration="21883000" />
       <workItem from="1542914418847" duration="12737000" />
-      <workItem from="1543164126614" duration="9674000" />
+      <workItem from="1543164126614" duration="26218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83613000" />
+    <option name="totallyTimeSpent" value="100157000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32662538" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3250825" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -522,12 +531,12 @@
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.3295626" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1996904" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21287128" />
       <window_info anchor="bottom" id="Terminal" order="16" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32662538" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.3250825" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1732224" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17549168" />
       <window_info anchor="right" id="Database" order="6" visible="true" weight="0.17019667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -829,40 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1129#1130#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1208#1209#0" expanded="true" />
-            <element signature="e#1256#1257#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1333#1334#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1446#1447#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1533#1534#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://4122c290-5bc6-4e47-9d7c-6dd22b97ce6e/schema/main/table/sqlite_master">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -898,15 +873,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/AdminController.java">
+    <entry file="file://$PROJECT_DIR$/src/admin/adminFXML.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="74" column="60" lean-forward="true" selection-start-line="74" selection-start-column="60" selection-end-line="74" selection-end-column="60" />
+        <state relative-caret-position="205">
+          <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/UserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1129#1130#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+            <element signature="e#1333#1334#0" expanded="true" />
+            <element signature="e#1369#1370#0" expanded="true" />
+            <element signature="e#1416#1417#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
             <element signature="e#1186#1187#0" expanded="true" />
             <element signature="e#1225#1226#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4122c290-5bc6-4e47-9d7c-6dd22b97ce6e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4122c290-5bc6-4e47-9d7c-6dd22b97ce6e/schema/main/table/loginaccess.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>

@@ -23,7 +23,7 @@ public class AdminController implements Initializable {
 
     //przycisk Exit odpowiedzialny za zamknięcie okna logowania aplikacji! DZIAŁA!!!!!
     @FXML
-    private void closeAction(ActionEvent exitButton){
+    private void closeAction(ActionEvent exitButton) {
         System.exit(0);
     }
 
@@ -31,29 +31,32 @@ public class AdminController implements Initializable {
 
 
 
+    @FXML
+    private TextField username;
+    @FXML
+    private TextField password;
+    @FXML
+    private TextField profile;
+//    @FXML
+//    private TextField ID;
+
+
 
 
     @FXML
-    private TextField id;
-     @FXML
-    private TextField username;
-     @FXML
-    private TextField password;
-     @FXML
-    private TextField profile;
-
-     @FXML
     private TableView<UserData> usertable;
 
 
-    @FXML
-    private TableColumn<UserData, String> idcolumn;
+//    @FXML
+//    private TableColumn<UserData, String> idcolumn;
     @FXML
     private TableColumn<UserData, String> usernamecolumn;
     @FXML
     private TableColumn<UserData, String> passwordcolumn;
     @FXML
     private TableColumn<UserData, String> profilecolumn;
+
+
 
 
     private dbConnection dc;
@@ -75,22 +78,23 @@ public class AdminController implements Initializable {
             this.data = FXCollections.observableArrayList();
 
             ResultSet rs = conn.createStatement().executeQuery(sql);
-            while (rs.next()){
-                this.data.add(new UserData(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4)));
+            while (rs.next()) {
+                this.data.add(new UserData(rs.getString(1), rs.getString(2), rs.getString(3)));
 
             }
 
-        }catch (SQLException e){
+        } catch (SQLException e) {
             System.err.println("Error" + e);
 
         }
 
 
 
-        this.idcolumn.setCellValueFactory(new PropertyValueFactory<>("ID"));
+//        this.idcolumn.setCellValueFactory(new PropertyValueFactory<>("ID"));
         this.usernamecolumn.setCellValueFactory(new PropertyValueFactory<>("username"));
         this.passwordcolumn.setCellValueFactory(new PropertyValueFactory<>("password"));
         this.profilecolumn.setCellValueFactory(new PropertyValueFactory<>("profile"));
+
 
         this.usertable.setItems(null);
         this.usertable.setItems(this.data);
@@ -102,21 +106,24 @@ public class AdminController implements Initializable {
     //dodanie danych do bazy
 
     @FXML
-    private void addUser(ActionEvent event){
-        String sqlInsert = "INSERT INTO loginaccess(id,username,password,profile) VALUES (?,?,?,?)";
+    private void addUser(ActionEvent event) {
+        String sqlInsert = "INSERT INTO loginaccess(username,password,profile) VALUES (?,?,?)";
 
         try {
             Connection conn = dbConnection.getConnection();
             PreparedStatement stmt = conn.prepareStatement(sqlInsert);
 
-            stmt.setString(1, this.id.getText());
-            stmt.setString(2, this.username.getText());
-            stmt.setString(3, this.password.getText());
-            stmt.setString(4, this.profile.getText());
+//            stmt.setString(1, this.ID.getText());
+            stmt.setString(1, this.username.getText());
+            stmt.setString(2, this.password.getText());
+            stmt.setString(3, this.profile.getText());
+
+
+
+
 
             stmt.execute();
             conn.close();
-
 
 
         } catch (SQLException e) {
@@ -128,15 +135,43 @@ public class AdminController implements Initializable {
     //czyszczenie formularza
 
     @FXML
-    private void clearFields(ActionEvent event){
-        this.id.setText("");
+    private void clearFields(ActionEvent event) {
+//        this.ID.setText("");
         this.username.setText("");
         this.password.setText("");
         this.profile.setText("");
 
 
+
     }
 
+    //usuwanie dane tylko z tableview a w bazie dalej są....
+//
+//    @FXML
+//    private void deleteRowFromTable(ActionEvent event){
+//
+//        usertable.getItems().removeAll(usertable.getSelectionModel().getSelectedItem());
+//
+//
+//    }
 
 
+//    //usuwanie danych do bazy
+//@FXML
+//private void deleteUser(ActionEvent event)
+//    {
+//        try
+//        {
+//            Connection conn = dbConnection.getConnection();
+//            UserData userData = (UserData) usertable.getSelectionModel().getSelectedItems();
+//            PreparedStatement stmt = conn.prepareStatement("DELETE FROM loginaccess WHERE id =?");
+//
+//            stmt.setString(1, username.getId());
+//            stmt.execute();
+//            conn.close();
+//        }
+//        catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//    }
 }
