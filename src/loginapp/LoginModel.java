@@ -32,17 +32,16 @@ public class LoginModel {
         PreparedStatement pr = null;
         ResultSet rs = null;
 
-        String sql = "SELECT * FROM loginaccess where username = ? and password = ? and profile = ?";
+        String query = "SELECT * FROM loginaccess where username = ? and password = ? and profile = ?";
 
         try {
 
-            pr = this.connection.prepareStatement(sql);
+            pr = this.connection.prepareStatement(query);
             pr.setString(1, user);
             pr.setString(2, pass);
             pr.setString(3, opt);
 
             rs = pr.executeQuery();
-
             boolean boll1;
             if (rs.next()) {
                 return true;

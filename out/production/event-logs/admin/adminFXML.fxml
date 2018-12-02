@@ -25,9 +25,10 @@
                            <children>
                               <TableView fx:id="usertable" prefHeight="411.0" prefWidth="800.0" tableMenuButtonVisible="true">
                                 <columns>
-                                  <TableColumn fx:id="usernamecolumn" prefWidth="254.0" text="Username" />
-                                    <TableColumn fx:id="passwordcolumn" minWidth="0.0" prefWidth="289.0" text="Password" />
-                                    <TableColumn fx:id="profilecolumn" minWidth="1.0" prefWidth="256.0" text="Profile" />
+                                  <TableColumn fx:id="idcolumn" prefWidth="28.0" text="ID" />
+                                    <TableColumn fx:id="usernamecolumn" minWidth="0.0" prefWidth="234.0" text="Username" />
+                                    <TableColumn fx:id="passwordcolumn" minWidth="1.0" prefWidth="298.0" text="Password" />
+                                    <TableColumn fx:id="profilecolumn" maxWidth="355.0" minWidth="1.0" prefWidth="228.0" text="Profile" />
                                 </columns>
                                  <HBox.margin>
                                     <Insets left="200.0" right="200.0" />
@@ -86,7 +87,20 @@
                                     <Button layoutX="705.0" layoutY="14.0" mnemonicParsing="false" onAction="#addUser" prefHeight="25.0" prefWidth="150.0" text="Add User" />
                                     <Button layoutX="705.0" layoutY="44.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="25.0" prefWidth="150.0" text="Clear Form" />
                                     <Button layoutX="705.0" layoutY="73.0" mnemonicParsing="false" onAction="#loadUserData" prefHeight="25.0" prefWidth="150.0" text="Load Data" />
-                                    <Button layoutX="705.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Remove selected row" />
+                                    <Button layoutX="705.0" layoutY="106.0" mnemonicParsing="false" onAction="#deleteRowFromTable" prefHeight="25.0" prefWidth="150.0" text="Remove selected row" />
+                                    <Label layoutX="47.0" layoutY="30.0" text="id" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <TextField fx:id="ID" layoutX="151.0" layoutY="28.0">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </TextField>
                                  </children>
                               </AnchorPane>
                            </children>
@@ -95,10 +109,59 @@
                   </AnchorPane>
             </content>
           </Tab>
-            <Tab text="Other">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-              </content>
+            <Tab text="Failures">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutY="176.0" prefHeight="399.0" prefWidth="1200.0">
+                           <children>
+                              <TableView fx:id="failurestable" prefHeight="399.0" prefWidth="1194.0" tableMenuButtonVisible="true">
+                                 <columns>
+                                    <TableColumn fx:id="idFailures" prefWidth="30.0" text="Lp." />
+                                    <TableColumn fx:id="dateFailures" maxWidth="200.0" minWidth="0.0" prefWidth="88.0" text="Data awarii" />
+                                    <TableColumn fx:id="timeFailures" maxWidth="244.0" minWidth="1.0" prefWidth="118.0" text="Godzina powstania" />
+                                    <TableColumn fx:id="detailsFailures" maxWidth="327.0" minWidth="1.0" prefWidth="188.0" text="Szczegóły awarii" />
+                                    <TableColumn fx:id="durationFailures" maxWidth="363.0" minWidth="1.0" prefWidth="100.0" text="Czas trwania" />
+                                    <TableColumn fx:id="causesFailures" maxWidth="512.0" minWidth="1.0" prefWidth="171.0" text="Przyczyny" />
+                                    <TableColumn fx:id="effectsFailures" maxWidth="421.0" minWidth="1.0" prefWidth="176.0" text="Skutki" />
+                                    <TableColumn fx:id="commentsFailures" maxWidth="421.0" minWidth="1.0" prefWidth="164.0" text="Uwagi" />
+                                    <TableColumn fx:id="signatureFailures" maxWidth="133.0" minWidth="1.0" prefWidth="133.0" text="Podpis" />
+                                 </columns>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </TableView>
+                           </children>
+                        </HBox>
+                        <VBox layoutX="-2.0" layoutY="1.0" prefHeight="175.0" prefWidth="1200.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="1200.0" text="Failures">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane prefHeight="148.0" prefWidth="1200.0">
+                                 <children>
+                                    <Button layoutX="705.0" layoutY="14.0" mnemonicParsing="false" onAction="#addFailures" prefHeight="25.0" prefWidth="150.0" text="Add User" />
+                                    <Button layoutX="705.0" layoutY="44.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="25.0" prefWidth="150.0" text="Clear Form" />
+                                    <Button layoutX="705.0" layoutY="73.0" mnemonicParsing="false" onAction="#loadDatabaseDataFailures" prefHeight="25.0" prefWidth="150.0" text="Load Data" />
+                                    <Button layoutX="705.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Remove selected row" />
+                                    <TextField fx:id="idFailuresBox" layoutX="198.0" layoutY="15.0" promptText="name" text="idFailures" />
+                                    <TextField fx:id="dateFailuresBox" layoutX="198.0" layoutY="44.0" promptText="name2" text="dateFailures" />
+                                    <TextField fx:id="timeFailuresBox" layoutX="198.0" layoutY="73.0" promptText="name3" text="timeFailures" />
+                                    <TextField fx:id="detailsFailuresBox" layoutX="198.0" layoutY="94.0" promptText="name3" text="detailsFailures" />
+                                    <TextField fx:id="durationFailuresBox" layoutX="198.0" layoutY="119.0" promptText="name3" text="durationFailures" />
+                                    <TextField fx:id="causesFailuresBox" layoutX="393.0" layoutY="15.0" promptText="name3" text="causesFailures" />
+                                    <TextField fx:id="effectsFailuresBox" layoutX="393.0" layoutY="44.0" promptText="name3" text="effectsFailures" />
+                                    <TextField fx:id="commentsFailuresBox" layoutX="393.0" layoutY="73.0" promptText="name3" text="commentsFailures" />
+                                    <TextField fx:id="signatureFailuresBox" layoutX="382.0" layoutY="107.0" promptText="name3" text="signatureFailures" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
             </Tab>
         </tabs>
       </TabPane>

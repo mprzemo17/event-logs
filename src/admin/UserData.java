@@ -7,16 +7,16 @@ import javafx.beans.property.StringProperty;
 public class UserData {
 
 
-//    private final StringProperty ID;
+    private final Integer id;
     private final StringProperty username;
     private final StringProperty password;
     private final StringProperty profile;
 
 
-    public UserData(String username, String password, String profile){
+    public UserData(Integer id, String username, String password, String profile){
 
 
-//        this.ID = new SimpleStringProperty(ID);
+        this.id = new Integer(id);
         this.username = new SimpleStringProperty(username);
         this.password = new SimpleStringProperty(password);
         this.profile = new SimpleStringProperty(profile);
@@ -24,17 +24,9 @@ public class UserData {
 
     }
 
-//    public String getID() {
-//        return ID.get();
-//    }
-//
-//    public StringProperty IDProperty() {
-//        return ID;
-//    }
-//
-//    public void setID(String ID) {
-//        this.ID.set(ID);
-//    }
+    public Integer getId() {
+        return id;
+    }
 
     public String getUsername() {
         return username.get();
